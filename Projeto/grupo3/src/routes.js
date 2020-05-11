@@ -2,11 +2,11 @@ import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import Login from './Pages/Login/Login'
-{/*
+/*
 import CadastroUsuario from './Pages/CadastroUsuario'
 import ListarMidias from './Pages/ListarMidias'
 import ListarMidiasAddPeloUsuario from './Pages/ListarMidiasAddPeloUsuario/listarMidiasAddPeloUsuario'
-*/}
+*/
 
 
 

@@ -1,0 +1,116 @@
+.fundo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./fundo_borrado.png);
+}
+
+.header{
+    display: flex;
+    text-align: center;
+    margin-left: 840px;    
+}
+
+.cadastro{
+    margin: 10px;
+    width: 150px;
+    height: 24px;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding-top: 3px;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+.lm{
+    margin: 10px;
+    width: 150px;
+    height: 24px;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding-top: 3px;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+.cm{
+    margin: 10px;
+    width: 150px;
+    height: 24px;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding-top: 3px;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+
+.cadastro:hover{
+    background-color:  rgb(151, 151, 151);
+}
+
+.lm:hover{
+    background-color: rgb(151, 151, 151);
+}
+
+.cm:hover{
+    background-color:  rgb(151, 151, 151);
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box{
+    height: 300px;
+    width: 340px;
+    background-color: #ddd;
+    margin-top: 120px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.title{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.input{
+    border-radius: 5px;
+    width: 240px;    
+    height: 50px;
+    margin: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    font-size: 14pt;
+}
+
+.button{
+    border-radius: 5px;
+    margin: 5px;
+    width: 200px;
+    height: 50px;
+    background-color: rgba(132, 132, 134, 0.267);
+    cursor: pointer;
+    font-size: large;
+    transition: background-color 1s;
+}
+
+.button:hover{
+    background-color: rgb(104, 104, 104);
+}
+
+.rodape{
+    margin-top: 150px;
+    text-align: center;
+    font-size: 13pt;
+    border-top: 1px solid black;
+    width: 1350px;
+}
