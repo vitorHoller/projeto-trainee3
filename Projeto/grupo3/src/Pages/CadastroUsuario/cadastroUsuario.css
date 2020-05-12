@@ -1,0 +1,104 @@
+.fundoCU{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./fundo_borrado.png);
+    height: 625px;
+}
+
+.headerCU{
+    display: flex;
+    text-align: center;
+    margin-left: 840px;
+}
+.boxCU{
+    height: 350px;
+    background-color: #ddd;
+    margin-top: 100px;
+    border-radius: 10px;
+    flex-direction: column;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    
+}
+.form-control{
+    align-items: center;
+    width: 300px;
+    height: 30px;
+    display: flex;
+    font-size: 10pt;
+    margin-left: 15px;
+}
+.col{
+    padding-left: 0px;
+    
+}
+.titleCU{
+    margin-top: 15px;
+    text-align: center;
+}
+.loginCU{
+    margin: 10px;
+    width: 150px;
+    height: 24px;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding-top: 0px;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+.lmCU{
+    margin: 10px;
+    width: 150px;
+    height: 24px;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding-top: 0px;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+.cmCU{
+    margin: 10px;
+    width: 150px;
+    height: 24px;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding-top: 0px;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+.btn-primary{
+    height: 30px;
+    width: 300px;
+    text-align: center;
+    
+}
+.btn{
+    align-items: center;
+    width: 300px;
+    margin: 15px;
+    margin-top: 3px;
+    padding: 0px;
+    background-color: rgba(132, 132, 134, 0.267);
+    border-color: rgba(132, 132, 134, 0.267); ;
+}
+.btn:hover{
+    background-color: rgb(104, 104, 104);
+}
+.loginCU:hover{
+    background-color:  rgb(151, 151, 151);
+}
+
+.lmCU:hover{
+    background-color: rgb(151, 151, 151);
+}
+
+.cmCU:hover{
+    background-color:  rgb(151, 151, 151);
+}
+.rodapeCU{
+    margin-top: 90px;
+    text-align: center;
+    font-size: 13pt;
+    border-top: 1px solid black;
+    width: 1350px;
+}
