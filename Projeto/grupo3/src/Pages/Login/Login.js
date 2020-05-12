@@ -1,5 +1,7 @@
 import React from 'react'
 import './Login.css'
+import {Button} from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function Login() {
     return (
@@ -16,7 +18,7 @@ export default function Login() {
                     <div className='login'>
                         <input className='input' placeholder='Login'></input>
                         <input className='input' placeholder='Senha' type = 'password'></input>
-                        <button className = 'button'>Logar</button>
+                        <Button className = 'button' variant = 'secondary' type="submit">Log In</Button>{' '}
                     </div>
 
                 </div>
