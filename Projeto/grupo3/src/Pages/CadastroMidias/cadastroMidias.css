@@ -1,0 +1,82 @@
+.fundo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./fundo_borrado.png);
+    height: 673px;
+}
+
+.header{
+    display: flex;
+    text-align: center;
+    margin-left: 840px;    
+}
+
+.cadastro{
+    margin: 10px;
+    width: 150px;
+    height: 24px;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding-top: 3px;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+.lm{
+    margin: 10px;
+    width: 150px;
+    height: 24px;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding-top: 3px;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+.cm{
+    margin: 10px;
+    width: 150px;
+    height: 24px;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding-top: 3px;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+
+.cadastro:hover{
+    background-color:  rgb(151, 151, 151);
+}
+
+.lm:hover{
+    background-color: rgb(151, 151, 151);
+}
+
+.cm:hover{
+    background-color:  rgb(151, 151, 151);
+}
+
+.form{
+    width: 400px;
+    background-color: rgb(218, 218, 218);
+    height: 600px;
+    border-radius: 20px;
+}
+
+
+.cadastromidia{
+    width: 360px;
+    background-color: rgb(245, 245, 245);
+    margin: 20px;
+    height: auto;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+
+.rodape{
+    margin-top: 150px;
+    text-align: center;
+    font-size: 13pt;
+    border-top: 1px solid black;
+    width: 1350px;
+}

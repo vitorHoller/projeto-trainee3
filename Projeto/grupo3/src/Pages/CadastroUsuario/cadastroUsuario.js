@@ -1,8 +1,10 @@
 import React from "react";
-import "./CadastroUsuario.css";
+import "./cadastroUsuario.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Form, Col } from "react-bootstrap";
 import {Button} from "react-bootstrap"
+
+
 export default function CadastroUsuario() {
   return (
     <div className="fundoCU">
