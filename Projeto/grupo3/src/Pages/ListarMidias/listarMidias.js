@@ -14,6 +14,8 @@ export default function ListarMidias() {
             <div className='body'>
                 <h1>Mídias cadastradas</h1>
                 <ul>
+                    {/*numeros de 'bloquinhos' que vai ser mostrado na pagina
+                    depende da quantidade de midias inseridas que o backend passar.*/}
                     <li>
                         <strong>Nome da mídia</strong>
                         <p>Mídia teste</p>
