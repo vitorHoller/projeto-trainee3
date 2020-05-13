@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Login from './Pages/Login/Login'
 import CadastroMidias from './Pages/CadastroMidias/cadastroMidias'
 import CadastroUsuario from './Pages/CadastroUsuario/cadastroUsuario'
+import ListarMidias from './Pages/ListarMidias/listarMidias'
 
 /*
 import ListarMidias from './Pages/ListarMidias'
@@ -22,6 +23,7 @@ export default function Routes() {
                 <Route path="/listarmidiasusuario" exact component={ListarMidiasAddPeloUsuario} /> */}
                 <Route path="/login" exact component={Login} />
                 <Route path = '/cadastromidia' exact component = {CadastroMidias}/>
+                <Route path = '/midiaslistadas' exact component = {ListarMidias} />
             </Switch>
         </BrowserRouter>
     );
