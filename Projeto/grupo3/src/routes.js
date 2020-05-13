@@ -23,7 +23,7 @@ export default function Routes() {
                 <Route path="/listarmidiasusuario" exact component={ListarMidiasAddPeloUsuario} /> */}
                 <Route path="/login" exact component={Login} />
                 <Route path = '/cadastromidia' exact component = {CadastroMidias}/>
-                <Route path = '/midiaslistadas' exact component = {ListarMidias} />
+                <Route path = '/midias' exact component = {ListarMidias} />
             </Switch>
         </BrowserRouter>
     );
