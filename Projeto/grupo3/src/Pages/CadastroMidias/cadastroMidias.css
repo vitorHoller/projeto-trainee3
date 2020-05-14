@@ -3,7 +3,13 @@
     flex-direction: column;
     align-items: center;
     background-image: url(./fundo_borrado.png);
-    height: 720px;
+    height: 730px;
+}
+
+.popup{
+    display: block;
+    position: absolute;
+    align-self: center;
 }
 
 .header{
@@ -32,7 +38,7 @@
     transition: background-color 1s;
     cursor: pointer;
 }
-.cm{
+.ln{
     margin: 10px;
     width: 150px;
     height: 24px;
@@ -51,7 +57,7 @@
     background-color: rgb(151, 151, 151);
 }
 
-.cm:hover{
+.ln:hover{
     background-color:  rgb(151, 151, 151);
 }
 
