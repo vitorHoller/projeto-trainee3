@@ -14,50 +14,138 @@ export default function ListarMidias() {
             <div className='body'>
                 <h1>Mídias cadastradas</h1>
                 <ul>
-                    {/*numeros de 'bloquinhos' que vai ser mostrado na pagina
+                    <div className='bordaporfora'>
+                        {/*numeros de 'bloquinhos' que vai ser mostrado na pagina
                     depende da quantidade de midias inseridas que o backend passar.*/}
-                    <li>
-                        <strong>Nome da mídia</strong>
-                        <p>Mídia teste</p>
+                        <li>
+                            <strong>Nome da mídia</strong>
+                            <p>Mídia teste</p>
 
-                        <strong>Tipo da mídia</strong>
-                        <p>Tipo da mídia teste</p>
+                            <strong>Tipo da mídia</strong>
+                            <p>Tipo da mídia teste</p>
 
-                        <strong>Quantidade de episódios</strong>
-                        <p>Quantidade de episódios teste</p>
+                            <strong>Quantidade de episódios</strong>
+                            <p>Quantidade de episódios teste</p>
 
-                        <strong>Gênero</strong>
-                        <p>Gênero teste</p>
+                            <strong>Gênero</strong>
+                            <p>Gênero teste</p>
 
-                        <strong>Data de lançamento</strong>
-                        <p>Data de lançamento teste</p>
+                            <strong>Data de lançamento</strong>
+                            <p>Data de lançamento teste</p>
 
-                        <strong>Tempo de duração</strong>
-                        <p>Tempo de duração teste</p>
-                    </li>
-                    <li>
-                        <strong>Nome da mídia</strong>
-                        <p>Mídia teste</p>
+                            <strong>Tempo de duração</strong>
+                            <p>Tempo de duração teste</p>
+                        </li>
+                    </div>
+                    <div className='bordaporfora'>
+                        <li>
+                            <strong>Nome da mídia</strong>
+                            <p>Mídia teste</p>
 
-                        <strong>Tipo da mídia</strong>
-                        <p>Tipo da mídia teste</p>
+                            <strong>Tipo da mídia</strong>
+                            <p>Tipo da mídia teste</p>
 
-                        <strong>Quantidade de episódios</strong>
-                        <p>Quantidade de episódios teste</p>
+                            <strong>Quantidade de episódios</strong>
+                            <p>Quantidade de episódios teste</p>
 
-                        <strong>Gênero</strong>
-                        <p>Gênero teste</p>
+                            <strong>Gênero</strong>
+                            <p>Gênero teste</p>
 
-                        <strong>Data de lançamento</strong>
-                        <p>Data de lançamento teste</p>
+                            <strong>Data de lançamento</strong>
+                            <p>Data de lançamento teste</p>
 
-                        <strong>Tempo de duração</strong>
-                        <p>Tempo de duração teste</p>
-                    </li>
+                            <strong>Tempo de duração</strong>
+                            <p>Tempo de duração teste</p>
+                        </li>
+                    </div>
+                    <div className='bordaporfora'>
+                        <li>
+                            <strong>Nome da mídia</strong>
+                            <p>Mídia teste</p>
+
+                            <strong>Tipo da mídia</strong>
+                            <p>Tipo da mídia teste</p>
+
+                            <strong>Quantidade de episódios</strong>
+                            <p>Quantidade de episódios teste</p>
+
+                            <strong>Gênero</strong>
+                            <p>Gênero teste</p>
+
+                            <strong>Data de lançamento</strong>
+                            <p>Data de lançamento teste</p>
+
+                            <strong>Tempo de duração</strong>
+                            <p>Tempo de duração teste</p>
+                        </li>
+                    </div>
+                    <div className='bordaporfora'>
+                        <li>
+                            <strong>Nome da mídia</strong>
+                            <p>Mídia teste</p>
+
+                            <strong>Tipo da mídia</strong>
+                            <p>Tipo da mídia teste</p>
+
+                            <strong>Quantidade de episódios</strong>
+                            <p>Quantidade de episódios teste</p>
+
+                            <strong>Gênero</strong>
+                            <p>Gênero teste</p>
+
+                            <strong>Data de lançamento</strong>
+                            <p>Data de lançamento teste</p>
+
+                            <strong>Tempo de duração</strong>
+                            <p>Tempo de duração teste</p>
+                        </li>
+                    </div>
+                    <div className='bordaporfora'>
+                        <li>
+                            <strong>Nome da mídia</strong>
+                            <p>Mídia teste</p>
+
+                            <strong>Tipo da mídia</strong>
+                            <p>Tipo da mídia teste</p>
+
+                            <strong>Quantidade de episódios</strong>
+                            <p>Quantidade de episódios teste</p>
+
+                            <strong>Gênero</strong>
+                            <p>Gênero teste</p>
+
+                            <strong>Data de lançamento</strong>
+                            <p>Data de lançamento teste</p>
+
+                            <strong>Tempo de duração</strong>
+                            <p>Tempo de duração teste</p>
+                        </li>
+                    </div>
+                    <div className='bordaporfora'>
+                        <li>
+                            <strong>Nome da mídia</strong>
+                            <p>Mídia teste</p>
+
+                            <strong>Tipo da mídia</strong>
+                            <p>Tipo da mídia teste</p>
+
+                            <strong>Quantidade de episódios</strong>
+                            <p>Quantidade de episódios teste</p>
+
+                            <strong>Gênero</strong>
+                            <p>Gênero teste</p>
+
+                            <strong>Data de lançamento</strong>
+                            <p>Data de lançamento teste</p>
+
+                            <strong>Tempo de duração</strong>
+                            <p>Tempo de duração teste</p>
+                        </li>
+                    </div>
                 </ul>
             </div>
             <footer>
-                <h3>Criado pelo Grupo3</h3>
+                <h3>Desenvolvido pelo Grupo3</h3>
             </footer>
         </div >
     )

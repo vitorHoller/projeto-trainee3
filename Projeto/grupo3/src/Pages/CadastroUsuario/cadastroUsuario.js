@@ -1,11 +1,11 @@
 import React from "react";
-import "./cadastroUsuario.css";
+import "./CadastroUsuario.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Form, Col } from "react-bootstrap";
 import {Button} from "react-bootstrap"
 
 
-export default function CadastroUsuario() {
+export default function cadastroUsuario() {
   return (
     <div className="fundoCU">
       <div className="header">
@@ -13,7 +13,7 @@ export default function CadastroUsuario() {
         <a className="lmCU">Listar Mídias</a>
         <a className="cmCU">Cadastrar Mídias</a>
       </div>
-      <div>
+      <div className='box-'>
         <Form className="boxCU" v>
           <h1 className="titleCU">Cadastre-se</h1>
           <Form.Group controlId="formGroupName">
@@ -28,9 +28,12 @@ export default function CadastroUsuario() {
           <Form.Group controlId="formGroupPassword">
             <Form.Control type="password" placeholder="Senha" />
           </Form.Group>
+          <Form.Group controlId="formGroupDate" className='data'>
+            <Form.Control  type="date"/>
+          </Form.Group>
           <Form.Group as={Col} controlId="formGridSexo">
             <Form.Control as="select">
-              <option>Sexo</option>
+              <option>Gênero</option>
               <option>Masculino</option>
               <option>Feminino</option>
               <option>Outro</option>
@@ -40,7 +43,7 @@ export default function CadastroUsuario() {
         </Form>
       </div>
       <div className="rodapeCU">
-        <p>Criado por Grupo 3</p>
+        <p>Desenvolvido por Grupo 3</p>
       </div>
     </div>
   );
