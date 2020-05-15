@@ -52,9 +52,9 @@ export default function CadastroMidias() {
 </div>
 
             <div className='header'>
-                <a href = '/home/vitor/projeto-trainee3/Projeto/grupo3/src/Pages/CadastroUsuario/cadastroUsuario.js' className='cadastro'>Cadastrar Usuário</a>
-                <a href = '/home/vitor/projeto-trainee3/Projeto/grupo3/src/Pages/ListarMidias/listarMidias.js' className='lm'>Listar Mídias</a>
-                <a href = '/home/vitor/projeto-trainee3/Projeto/grupo3/src/Pages/Login/Login.js' className='ln'>Login</a>
+                <a href = 'http://localhost:3000/' className='ln'>Login</a>
+                <a href = 'http://localhost:3000/cadastrousuario' className='cadastro'>Cadastrar Usuário</a>
+                <a href = 'http://localhost:3000/midias' className='lm'>Listar Mídias</a>
             </div>
 
             <div className='form mt-4'>

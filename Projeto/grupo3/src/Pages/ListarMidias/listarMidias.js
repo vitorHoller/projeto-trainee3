@@ -7,9 +7,9 @@ export default function ListarMidias() {
     return (
         <div className='back'>
             <div className='header'>
-                <a className='ln'>Login</a>
-                <a className='cadu'>Cadastrar Usuário</a>
-                <a className='cadm'>Cadastrar Mídias</a>
+                <a className='ln' href='http://localhost:3000/'>Login</a>
+                <a className='cadu' href='http://localhost:3000/cadastrousuario'>Cadastrar Usuário</a>
+                <a className='cadm' href='http://localhost:3000/cadastromidia'>Cadastrar Mídias</a>
             </div>
             <div className='body'>
                 <h1>Mídias cadastradas</h1>
