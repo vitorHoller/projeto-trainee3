@@ -50,6 +50,7 @@
     padding-top: 0px;
     transition: background-color 1s;
     cursor: pointer;
+    color: black;
 }
 .lmCU{
     margin: 10px;
@@ -60,6 +61,7 @@
     padding-top: 0px;
     transition: background-color 1s;
     cursor: pointer;
+    color: black;
 }
 .cmCU{
     margin: 10px;
@@ -70,6 +72,7 @@
     padding-top: 0px;
     transition: background-color 1s;
     cursor: pointer;
+    color: black;
 }
 .btn-primary{
     height: 30px;

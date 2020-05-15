@@ -21,6 +21,7 @@
     padding-top: 3px;
     transition: background-color 1s;
     cursor: pointer;
+    color: black;
 }
 .lm{
     margin: 10px;
@@ -31,6 +32,7 @@
     padding-top: 3px;
     transition: background-color 1s;
     cursor: pointer;
+    color: black;
 }
 .cm{
     margin: 10px;
@@ -41,6 +43,7 @@
     padding-top: 3px;
     transition: background-color 1s;
     cursor: pointer;
+    color: black;
 }
 
 .cadastro:hover{

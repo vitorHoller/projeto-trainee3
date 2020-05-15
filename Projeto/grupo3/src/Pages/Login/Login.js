@@ -7,9 +7,9 @@ export default function Login() {
     return (
         <div className='fundo'>
             <div className='header'>
-                <a className = 'cadastro'>Cadastrar Usuário</a>
-                <a className = 'lm'>Listar Mídias</a>
-                <a className = 'cm'>Cadastrar Mídias</a>
+                <a className = 'cadastro' href='http://localhost:3000/cadastrousuario'>Cadastrar Usuário</a>
+                <a className = 'cm' href='http://localhost:3000/cadastromidia'>Cadastrar Mídias</a>
+                <a className = 'lm'href='http://localhost:3000/midias'>Listar Mídias</a>
             </div>
 
             <div className='body'>

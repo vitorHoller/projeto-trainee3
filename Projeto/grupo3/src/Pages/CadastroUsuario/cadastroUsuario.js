@@ -1,5 +1,5 @@
 import React from "react";
-import "./CadastroUsuario.css";
+import "./cadastroUsuario.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Form, Col } from "react-bootstrap";
 import {Button} from "react-bootstrap"
@@ -8,13 +8,14 @@ import {Button} from "react-bootstrap"
 export default function cadastroUsuario() {
   return (
     <div className="fundoCU">
-      <div className="header">
-        <a className="loginCU">Login</a>
-        <a className="lmCU">Listar Mídias</a>
-        <a className="cmCU">Cadastrar Mídias</a>
+      <div className="headerCU">
+        <a className="loginCU" href='http://localhost:3000'>Login</a>
+        <a className="cmCU" href='http://localhost:3000/midias'>Cadastrar Mídias</a>
+        <a className="lmCU" href='http://localhost:3000/cadastromidia'>Listar Mídias</a>
+
       </div>
       <div className='box-'>
-        <Form className="boxCU" v>
+        <Form className="boxCU" >
           <h1 className="titleCU">Cadastre-se</h1>
           <Form.Group controlId="formGroupName">
             <Form.Control type="name" placeholder="Nome Completo" />
