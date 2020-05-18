@@ -4,7 +4,6 @@ import {Button, Nav, NavDropdown, Navbar, FormControl} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useHistory } from 'react-router-dom'
 
-
 export default function Login() {
     const usuario = 'Grupo 3'
     const senha = 'Grupo3';
@@ -38,7 +37,7 @@ export default function Login() {
                 <div className='box'>
                     <h1 className = 'title'>Eu já vi isso !</h1>
                     <div className='login'>
-                        <input className='input' placeholder='Login' onChange={(e) => setUserName(e.target.value)} ></input>
+                        <input className='input' placeholder='Usuário' onChange={(e) => setUserName(e.target.value)} ></input>
                         <input className='input' placeholder='Senha' type = 'password' onChange={(e) => setPassword(e.target.value)} ></input>
                         <a className = 'cadastro' href='http://localhost:3000/cadastrousuario'>Cadastre-se</a>
                         <Button className = 'button' variant = 'secondary' type="submit" onClick={() => handleSubmit()}>Entrar</Button>{' '}
