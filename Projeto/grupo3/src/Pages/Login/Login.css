@@ -23,6 +23,7 @@
     cursor: pointer;
     color: black;
 }
+
 .lm{
     margin: 10px;
     width: 150px;
@@ -34,6 +35,7 @@
     cursor: pointer;
     color: black;
 }
+
 .cm{
     margin: 10px;
     width: 150px;
@@ -94,6 +96,7 @@
     margin: 5px;
     border: 2px solid rgba(0, 0, 0, 0.3);
     font-size: 14pt;
+    padding: 10px;
 }
 
 .button{
@@ -112,9 +115,9 @@
 }
 
 .rodape{
-    margin-top: 150px;
-    text-align: center;
-    font-size: 13pt;
-    border-top: 1px solid black;
-    width: 1350px;
+margin-top: 150px;
+text-align: center;
+font-size: 13pt;
+border-top: 1px solid black;
+width: 1350px;
 }
