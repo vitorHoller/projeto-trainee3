@@ -11,17 +11,32 @@
     text-align: center;
     margin-left: 840px;    
 }
-
-.cadastro{
-    margin: 10px;
-    width: 150px;
-    height: 24px;
+.body{
+    display: flex;
+    height: 320px;
+    width: 365px;
+    margin-top: 120px;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(243, 241, 241);
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px grey;
+}
+.box{
+    height: 300px;
+    width: 340px;
     background-color: #ddd;
-    border-radius: 5px;
-    padding-top: 3px;
-    transition: background-color 1s;
-    cursor: pointer;
-    color: black;
+
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(0, 0, 0, 0.3);;
+
+}
+.cadastro{
+    margin-right: 98px;
 }
 
 .lm{
@@ -48,9 +63,7 @@
     color: black;
 }
 
-.cadastro:hover{
-    background-color:  rgb(151, 151, 151);
-}
+
 
 .lm:hover{
     background-color: rgb(151, 151, 151);
@@ -59,23 +72,11 @@
 .cm:hover{
     background-color:  rgb(151, 151, 151);
 }
-
-.body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.cadastro:hover{
+    background-color: transparent;
 }
 
-.box{
-    height: 300px;
-    width: 340px;
-    background-color: #ddd;
-    margin-top: 120px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid rgba(0, 0, 0, 0.3);
-}
+
 
 .title{
     margin-top: 15px;
@@ -86,7 +87,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+
 }
 
 .input{
@@ -101,8 +102,8 @@
 
 .button{
     border-radius: 5px;
-    margin: 5px;
-    width: 200px;
+    margin-top: 3px;
+    width: 240px;
     height: 50px;
     background-color: rgba(132, 132, 134, 0.267);
     cursor: pointer;

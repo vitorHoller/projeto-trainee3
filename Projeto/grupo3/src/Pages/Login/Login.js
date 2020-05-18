@@ -11,12 +11,11 @@ export default function Login() {
 
             <div className='header rounded' >
                 <Navbar className = 'batba rounded mt-2 mr-2' bg="light" expand="lg"> 
-                    <Navbar.Brand>Eu já vi isso!!</Navbar.Brand>
+                    <Navbar.Brand>Eu já vi isso !</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
-                            <Nav.Link href='http://localhost:3000/'>Login</Nav.Link>
-                            <Nav.Link href='http://localhost:3000/cadastrousuario'>Cadastrar Usuário</Nav.Link>
+                            <Nav.Link href='http://localhost:3000/cadastromidia'>Cadastrar Midias</Nav.Link>
                             <Nav.Link href="http://localhost:3000/midias">Listar Mídias</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
@@ -26,11 +25,12 @@ export default function Login() {
 
             <div className='body'>
                 <div className='box'>
-                    <h1 className = 'title'>Eu já vi isso!!</h1>
+                    <h1 className = 'title'>Eu já vi isso !</h1>
                     <div className='login'>
                         <input className='input' placeholder='Login'></input>
                         <input className='input' placeholder='Senha' type = 'password'></input>
-                        <Button className = 'button' variant = 'secondary' type="submit">Login</Button>{' '}
+                        <a className = 'cadastro' href='http://localhost:3000/cadastrousuario'>Cadastre-se</a>
+                        <Button className = 'button' variant = 'secondary' type="submit">Entrar</Button>{' '}
                     </div>
                 </div>
 
