@@ -13,13 +13,11 @@ export default function cadastroUsuario() {
 
       <div className='header rounded' >
         <Navbar className='batba rounded mt-2 mr-2' bg="light" expand="lg">
-          <Navbar.Brand>Eu já vi isso!!</Navbar.Brand>
+          <Navbar.Brand>Eu já vi isso !</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Link href='http://localhost:3000/'>Login</Nav.Link>
-              <Nav.Link href='http://localhost:3000/cadastromidia'>Cadastrar Midias</Nav.Link>
-              <Nav.Link href="http://localhost:3000/midias">Listar Mídias</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
