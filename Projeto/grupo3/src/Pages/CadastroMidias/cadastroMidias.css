@@ -1,9 +1,14 @@
-.fundo{
+.fundoCM{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-image: url(./fundo_borrado.png);
-    height: 730px;
+    height: fit-content;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .popup{
@@ -99,10 +104,12 @@
 .botao{
     color: black;
 }
-.rodape{
-    margin-top: 150px;
+
+.rodapeCM{
+    margin-top: 15px;
     text-align: center;
     font-size: 13pt;
     border-top: 1px solid black;
     width: 1350px;
+    padding-bottom: 0px;
 }

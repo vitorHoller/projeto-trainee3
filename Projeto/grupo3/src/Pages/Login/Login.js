@@ -1,16 +1,28 @@
 import React from 'react'
 import './Login.css'
-import {Button} from 'react-bootstrap'
+import {Button, Nav, NavDropdown, Navbar, FormControl} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function Login() {
+
     return (
+
         <div className='fundo'>
-            <div className='header'>
-                <a className = 'cadastro' href='http://localhost:3000/cadastrousuario'>Cadastrar Usuário</a>
-                <a className = 'cm' href='http://localhost:3000/cadastromidia'>Cadastrar Mídias</a>
-                <a className = 'lm'href='http://localhost:3000/midias'>Listar Mídias</a>
+
+            <div className='header rounded' >
+                <Navbar className = 'batba rounded mt-2 mr-2' bg="light" expand="lg"> 
+                    <Navbar.Brand>Eu já vi isso!!</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="mr-auto">
+                            <Nav.Link href='http://localhost:3000/'>Login</Nav.Link>
+                            <Nav.Link href='http://localhost:3000/cadastrousuario'>Cadastrar Usuário</Nav.Link>
+                            <Nav.Link href="http://localhost:3000/midias">Listar Mídias</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
             </div>
+
 
             <div className='body'>
                 <div className='box'>
@@ -18,12 +30,12 @@ export default function Login() {
                     <div className='login'>
                         <input className='input' placeholder='Login'></input>
                         <input className='input' placeholder='Senha' type = 'password'></input>
-                        <Button className = 'button' variant = 'secondary' type="submit">Log In</Button>{' '}
+                        <Button className = 'button' variant = 'secondary' type="submit">Login</Button>{' '}
                     </div>
-
                 </div>
+
                 <div className = 'rodape'>
-                 <p>Criado por Grupo 3</p>   
+                 <p>Desenvolvido por Grupo 3</p>   
                 </div>
 
             </div>

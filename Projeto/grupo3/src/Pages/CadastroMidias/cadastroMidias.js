@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './cadastroMidias.css'
-import { Button, Form, FormGroup, Alert } from 'react-bootstrap'
+import { Button, Form, FormGroup, Alert, Nav, NavDropdown, Navbar, FormControl } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
@@ -22,39 +22,47 @@ export default function CadastroMidias() {
     const [episodios, setEpisodios] = useState('')
 
     const [duracao, setDuracao] = useState('')
-    
+
     const [botao, setbotao] = useState(null)
 
 
     return (
-        <div className='fundo'>
-            <div className = 'popup mt-5 mr-5'>
-            {(!!nomeMidia == true 
-                    && !!temporadas == true 
-                    && !!duracao == true 
-                    && !!episodios == true 
-                    && !!selectedDate == true 
+        <div className='fundoCM'>
+            <div className='popup mt-5 mr-5'>
+                {(!!nomeMidia == true
+                    && !!temporadas == true
+                    && !!duracao == true
+                    && !!episodios == true
+                    && !!selectedDate == true
                     && !!genero == true
                     && !!botao == true) &&
 
-                        <Alert variant="success">
+                    <Alert variant="success">
                         <Alert.Heading>Mídia adicionada com sucesso!!!</Alert.Heading>
                           Você pode verificar a mídia instalada na página de listar as mídias, clique no link abaixo
                           para ser redirecionado
                           <p>
-                          <Alert.Link href='/home/vitor/projeto-trainee3/Projeto/grupo3/src/Pages/ListarMidias/listarMidias.css'>
-                              Clique Aqui
+                            <Alert.Link href='/home/vitor/projeto-trainee3/Projeto/grupo3/src/Pages/ListarMidias/listarMidias.css'>
+                                Clique Aqui
                           </Alert.Link>
-                          </p>
-                      </Alert>
-                    }
+                        </p>
+                    </Alert>
+                }
 
-</div>
+            </div>
 
-            <div className='header'>
-                <a href = 'http://localhost:3000/' className='ln'>Login</a>
-                <a href = 'http://localhost:3000/cadastrousuario' className='cadastro'>Cadastrar Usuário</a>
-                <a href = 'http://localhost:3000/midias' className='lm'>Listar Mídias</a>
+            <div className='header rounded' >
+                <Navbar className = 'batba rounded mt-2 mr-2' bg="light" expand="lg"> 
+                    <Navbar.Brand>Eu já vi isso!!</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="mr-auto">
+                            <Nav.Link href='http://localhost:3000/'>Login</Nav.Link>
+                            <Nav.Link href='http://localhost:3000/cadastrousuario'>Cadastrar Usuário</Nav.Link>
+                            <Nav.Link href="http://localhost:3000/midias">Listar Mídias</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
             </div>
 
             <div className='form mt-4'>
@@ -63,9 +71,9 @@ export default function CadastroMidias() {
 
                     <Form.Group>
                         <Form.Label>Nome da Mídia</Form.Label>
-                        <Form.Control placeholder="Ex: Naruto Shippuden" 
-                        value={nomeMidia} 
-                        onChange={e => setNomeMidia(e.target.value)} 
+                        <Form.Control placeholder="Ex: Naruto Shippuden"
+                            value={nomeMidia}
+                            onChange={e => setNomeMidia(e.target.value)}
                         />
                     </Form.Group>
 
@@ -80,24 +88,24 @@ export default function CadastroMidias() {
                             <option value={verify = 1} >Desenho Animado</option>
                         </Form.Control>
                     </Form.Group>
-                    
+
 
 
                     {verificador == 1 &&
                         <div>
                             <Form.Group>
                                 <Form.Label>Quatidade de Temporadas</Form.Label>
-                                <Form.Control placeholder='Ex: 8' 
-                                value={temporadas} 
-                                onChange={e => setTemporadas(e.target.value)} 
+                                <Form.Control placeholder='Ex: 8'
+                                    value={temporadas}
+                                    onChange={e => setTemporadas(e.target.value)}
                                 />
                             </Form.Group>
 
                             <Form.Group>
                                 <Form.Label>Quantidade de Episódios</Form.Label>
-                                <Form.Control placeholder='Ex: 40' 
-                                value={episodios} 
-                                onChange={e => setEpisodios(e.target.value)} 
+                                <Form.Control placeholder='Ex: 40'
+                                    value={episodios}
+                                    onChange={e => setEpisodios(e.target.value)}
                                 />
                             </Form.Group>
                         </div>
@@ -105,9 +113,9 @@ export default function CadastroMidias() {
 
                     <Form.Group>
                         <Form.Label>Gênero</Form.Label>
-                        <Form.Control placeholder='Ex: Comédia' 
-                        value={genero} 
-                        onChange={e => setGenero(e.target.value)} 
+                        <Form.Control placeholder='Ex: Comédia'
+                            value={genero}
+                            onChange={e => setGenero(e.target.value)}
                         />
                     </Form.Group>
 
@@ -124,22 +132,23 @@ export default function CadastroMidias() {
 
                     <FormGroup>
                         <Form.Label>Tempo de duração</Form.Label>
-                        <Form.Control placeholder='Tempo em minutos' 
-                        value={duracao} 
-                        onChange={e => setDuracao(e.target.value)} 
+                        <Form.Control placeholder='Tempo em minutos'
+                            value={duracao}
+                            onChange={e => setDuracao(e.target.value)}
                         />
                     </FormGroup>
                     {console.log(!!nomeMidia, !!temporadas, !!duracao, !!episodios, !!selectedDate, !!genero, !!botao)}
 
-                    <Button className='botao' onClick = {() => setbotao(true)}>Cadastrar</Button>
+                    <Button className='botao' onClick={() => setbotao(true)}>Cadastrar</Button>
 
                 </Form>
-
             </div>
-            
+
+            <div className='rodapeCM'>
+                <p>Desenvolvido por Grupo 3</p>
+            </div>
 
         </div>
-
     );
 }
 
