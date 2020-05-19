@@ -76,7 +76,9 @@
     background-color: transparent;
 }
 
-
+.cadastro svg {
+    margin-right: 8px;
+}
 
 .title{
     margin-top: 15px;
@@ -122,3 +124,4 @@ font-size: 13pt;
 border-top: 1px solid black;
 width: 1350px;
 }
+
