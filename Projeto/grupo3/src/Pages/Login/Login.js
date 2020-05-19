@@ -1,36 +1,46 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Login.css'
 import {Button, Nav, NavDropdown, Navbar, FormControl} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { useHistory } from 'react-router-dom'
 
 export default function Login() {
+    const usuario = 'Grupo 3'
+    const senha = 'Grupo3';
 
+    const [username,setUserName] = useState('');
+    const [password,setPassword] = useState('');
+
+    const history = useHistory();
+
+    function handleSubmit(){
+        
+        if (username === usuario && password === senha) {
+            history.push('cadastromidia')
+        }
+        else{
+            if (username !== usuario){
+                alert('Usuário inválido');
+            }
+            else if(password !== senha){
+                alert('Senha Inválida');
+            }
+        }
+    }
     return (
 
         <div className='fundo'>
 
-            <div className='header rounded' >
-                <Navbar className = 'batba rounded mt-2 mr-2' bg="light" expand="lg"> 
-                    <Navbar.Brand>Eu já vi isso !</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="mr-auto">
-                            <Nav.Link href='http://localhost:3000/cadastromidia'>Cadastrar Midias</Nav.Link>
-                            <Nav.Link href="http://localhost:3000/midias">Listar Mídias</Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Navbar>
+            <div className='header rounded'>
             </div>
-
-
             <div className='body'>
                 <div className='box'>
                     <h1 className = 'title'>Eu já vi isso !</h1>
                     <div className='login'>
-                        <input className='input' placeholder='Login'></input>
-                        <input className='input' placeholder='Senha' type = 'password'></input>
+                        <input className='input' placeholder='Usuário' onChange={(e) => setUserName(e.target.value)} ></input>
+                        <input className='input' placeholder='Senha' type = 'password' onChange={(e) => setPassword(e.target.value)} ></input>
                         <a className = 'cadastro' href='http://localhost:3000/cadastrousuario'>Cadastre-se</a>
-                        <Button className = 'button' variant = 'secondary' type="submit">Entrar</Button>{' '}
+                        <Button className = 'button' variant = 'secondary' type="submit" onClick={() => handleSubmit()}>Entrar</Button>{' '}
                     </div>
                 </div>
 
