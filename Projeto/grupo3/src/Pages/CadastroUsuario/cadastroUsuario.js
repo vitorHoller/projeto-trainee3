@@ -45,6 +45,10 @@ export default function cadastroUsuario() {
             <Form.Control type="password" placeholder="Senha" />
           </Form.Group>
 
+          <Form.Group controlId="formGroupConfirmPassword">
+            <Form.Control type="password" placeholder="Confirmar Senha" />
+          </Form.Group>
+
           <Form.Group controlId="formGroupDate" className='data'>
             <Form.Control type="date" />
           </Form.Group>
