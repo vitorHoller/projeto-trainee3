@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     background-image: url(./fundo_borrado.png);
-    height: 703px;
+    height: 100%;
 }
 .headerCU{
     display: flex;
@@ -11,7 +11,7 @@
     margin-left: 840px;
 }
 .boxCU{
-    height: 450px;
+    height: 480px;
     background-color: #ddd;
     border-radius: 10px;
     border: 2px solid rgba(0, 0, 0, 0.3);
@@ -20,7 +20,7 @@
     background: rgb(243, 241, 241);
     flex-direction: column;
     padding: 10px;
-    margin-top: 85px;
+    margin-top: 5px;
     border-radius: 10px;
     box-shadow: 4px 4px grey;
 }
@@ -105,7 +105,7 @@
     background-color:  rgb(151, 151, 151);
 }
 .rodapeCU{
-    margin-top: 40px;
+    margin-top: 15px;
     text-align: center;
     font-size: 13pt;
     border-top: 1px solid black;
