@@ -30,7 +30,10 @@ export default function cadastroUsuario() {
           <h1 className="titleCU">Cadastre-se</h1>
 
           <Form.Group controlId="formGroupName">
-            <Form.Control type="name" placeholder="Nome Completo" />
+            <Form.Control type="name" placeholder="Nome" />
+          </Form.Group>
+          <Form.Group controlId="formGroupName">
+            <Form.Control type="name" placeholder="Sobrenome" />
           </Form.Group>
 
           <Form.Group controlId="formGroupUsername">
@@ -46,7 +49,7 @@ export default function cadastroUsuario() {
           </Form.Group>
 
           <Form.Group controlId="formGroupConfirmPassword">
-            <Form.Control type="password" placeholder="Confirmar Senha" />
+            <Form.Control type="password" placeholder="Confirmar senha" />
           </Form.Group>
 
           <Form.Group controlId="formGroupDate" className='data'>
