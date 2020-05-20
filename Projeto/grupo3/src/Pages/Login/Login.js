@@ -32,20 +32,43 @@ export default function Login() {
 
         <div className='fundo'>
 
-            <div className='header rounded'>
-            </div>
             <div className='body'>
+
                 <div className='box'>
+
                     <h1 className='title'>Eu já vi isso !</h1>
+
                     <div className='login'>
-                        <input className='input' placeholder='Usuário' onChange={(e) => setUserName(e.target.value)} ></input>
-                        <input className='input' placeholder='Senha' type='password' onChange={(e) => setPassword(e.target.value)} ></input>
-                        <a className='cadastro' href='http://localhost:3000/cadastrousuario'>
-                            <FiLogIn size={16} />
-                            Cadastre-se
+
+                        <input className='input' 
+                        placeholder='Usuário' 
+                        onChange={(e) => setUserName(e.target.value)}>
+                        </input>
+
+                        <input className='input' 
+                         placeholder='Senha' 
+                         type='password' 
+                         onChange={(e) => setPassword(e.target.value)}>
+                        </input>
+
+                        <a className='cadastro' 
+                        href='http://localhost:3000/cadastrousuario'>
+
+                         <FiLogIn size={16}/>
+                         Cadastre-se
+                        
                         </a>
-                        <Button className='button' variant='secondary' type="submit" onClick={() => handleSubmit()}>Entrar</Button>{' '}
+
+                        <Button 
+                         className='button' 
+                         variant='secondary' 
+                         type="submit" 
+                         onClick={() => handleSubmit()}>
+                            Entrar
+                        </Button>{' '}
+                  
                     </div>
+                
                 </div>
 
                 <div className='rodape'>
@@ -53,6 +76,7 @@ export default function Login() {
                 </div>
 
             </div>
+
         </div>
     )
 }
