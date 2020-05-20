@@ -21,9 +21,6 @@
     background-color: #ddd;
     box-shadow: 4px 4px grey;
 }
-.table{
-    border-radius: 10px;
-}
 
 .tabelaheight{
     height: 385px;
@@ -36,7 +33,6 @@
 .bodytabela{
     background-color: rgb(218, 218, 218);
 }
-
 .rodapeLM {
     margin-bottom: 15px;
     text-align: center;

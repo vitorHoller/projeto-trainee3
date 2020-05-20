@@ -83,7 +83,7 @@ export default function ListarMidias() {
             </div>
 
             <div className = 'mt-3'>
-
+            
                 <h1 className='titulo p-3 pr-5 pl-5 rounded ml-auto mr-auto m-3 mb-4'>Mídias cadastradas</h1>
 
                 <div className = 'tabelaheight mr-auto ml-auto'>
