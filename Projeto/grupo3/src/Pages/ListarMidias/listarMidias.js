@@ -29,8 +29,8 @@ function MyVerticallyCenteredModal(props) {
                 <p>Série muito doida!</p>
             </Modal.Body>
             <Modal.Footer>
-                <Button>Editar</Button>
-                <Button onClick={props.onHide}>Close</Button>
+                <Button className = 'mr-5'>Editar</Button>
+                <Button className = 'ml-5 mr-5' onClick={props.onHide}>Close</Button>
             </Modal.Footer>
         </Modal>
     );
