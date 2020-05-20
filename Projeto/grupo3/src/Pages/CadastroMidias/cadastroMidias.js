@@ -27,7 +27,7 @@ export default function CadastroMidias() {
 
 
     return (
-        <div className='fundoCM'>
+        <div className='fundoCM overflow-hidden'>
             <div className='popup mt-5 mr-5'>
                 {(!!nomeMidia == true
                     && !!temporadas == true
@@ -42,7 +42,7 @@ export default function CadastroMidias() {
                           Você pode verificar a mídia instalada na página de listar as mídias, clique no link abaixo
                           para ser redirecionado
                           <p>
-                            <Alert.Link href='/home/vitor/projeto-trainee3/Projeto/grupo3/src/Pages/ListarMidias/listarMidias.css'>
+                            <Alert.Link href='http://localhost:3000/midias'>
                                 Clique Aqui
                           </Alert.Link>
                         </p>
@@ -52,14 +52,14 @@ export default function CadastroMidias() {
             </div>
 
             <div className='header rounded' >
-                <Navbar className = 'batba rounded mt-2 mr-2' bg="light" expand="lg"> 
+                <Navbar className = 'batbaCA rounded mt-2 mr-2' bg="light" expand="lg"> 
                     <Navbar.Brand>Eu já vi isso!!</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
                             <Nav.Link href='http://localhost:3000/'>Login</Nav.Link>
-                            <Nav.Link href='http://localhost:3000/cadastrousuario'>Cadastrar Usuário</Nav.Link>
-                            <Nav.Link href="http://localhost:3000/midias">Listar Mídias</Nav.Link>
+                            <Nav.Link href='http://localhost:3000/cadastrousuario'>Cadastrar usuário</Nav.Link>
+                            <Nav.Link href="http://localhost:3000/midias">Mídias cadastradas</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

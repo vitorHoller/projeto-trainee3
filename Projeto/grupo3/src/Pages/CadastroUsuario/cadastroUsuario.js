@@ -9,7 +9,7 @@ export default function cadastroUsuario() {
 
   return (
 
-    <div className="fundoCU">
+    <div className="fundoCU overflow-hidden">
 
       <div className='header rounded' >
         <Navbar className='batba rounded mt-2 mr-2' bg="light" expand="lg">

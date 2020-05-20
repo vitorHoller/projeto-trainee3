@@ -18,11 +18,15 @@
 .titulo{
     height: auto;
     width: fit-content;
-    background-color: rgb(218, 218, 218);
+    background-color: #ddd;
+    box-shadow: 4px 4px grey;
+}
+.table{
+    border-radius: 10px;
 }
 
 .tabelaheight{
-    height: 440px;
+    height: 385px;
     width: 750px;
 }
 .titulotabela{
@@ -33,9 +37,12 @@
     background-color: rgb(218, 218, 218);
 }
 
-.footerrr {
+.rodapeLM {
+    margin-bottom: 15px;
     text-align: center;
-    font-size: 18pt;
+    font-size: 13pt;
     border-top: 1px solid black;
 }
-
+.batbaLM{
+    margin-left: 25px;
+}
