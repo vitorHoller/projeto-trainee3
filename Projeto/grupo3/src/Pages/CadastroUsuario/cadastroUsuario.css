@@ -3,7 +3,11 @@
     flex-direction: column;
     align-items: center;
     background-image: url(./fundo_borrado.png);
-    height: 100%;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .headerCU{
     display: flex;
@@ -110,4 +114,7 @@
     font-size: 13pt;
     border-top: 1px solid black;
     width: 1350px;
+}
+.batba{
+    margin-left: 300px;
 }
