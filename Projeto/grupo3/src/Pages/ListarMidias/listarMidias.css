@@ -46,3 +46,19 @@
 .batbaLM{
     margin-left: 25px;
 }
+.topicosdaMidia strong {
+    font-size: 13pt;
+}
+.topicosdaMidia p {
+    font-size:11pt;
+}
+.iconedeEditar {
+    padding: 1px;
+    height: 5%;
+    width: 8%;
+    margin-top: 12px;
+}
+#contained-modal-title-vcenter {
+    display: flex;
+    font-size: 21pt;
+}
