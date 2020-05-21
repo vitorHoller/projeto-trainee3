@@ -62,9 +62,7 @@ export default function CadastroMidias() {
             <div className='header rounded' >
 
                 <Navbar className = 'batbaCA rounded mt-2 mr-2' bg="light" expand="lg"> 
-
-                    <Navbar.Brand>Eu já vi isso!!</Navbar.Brand>
-
+                    <Navbar.Brand>Eu já vi isso !</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -84,10 +82,10 @@ export default function CadastroMidias() {
             <div className='form mt-4'>
 
                 <Form className='cadastromidia'>
-
+                    <label className='tituloCM'>Cadastre sua mídia</label>
                     <Form.Group>
 
-                        <Form.Label>Nome da Mídia</Form.Label>
+                        <Form.Label>Nome da mídia</Form.Label>
 
                         <Form.Control placeholder="Ex: Naruto Shippuden"
                             value={nomeMidia}
@@ -98,7 +96,7 @@ export default function CadastroMidias() {
 
                     <Form.Group>
 
-                        <Form.Label>Selecione o Tipo de Mídia</Form.Label>
+                        <Form.Label>Selecione o tipo de mídia</Form.Label>
 
                         <Form.Control as="select" value={verify} onChange={e => setVerificador(e.target.value)}>
                             <option value={verify = 1} ></option>
@@ -106,7 +104,7 @@ export default function CadastroMidias() {
                             <option value={verify = 1} >Série</option>
                             <option value={verify = 0} >Filme</option>
                             <option value={verify = 0} >Documentário</option>
-                            <option value={verify = 1} >Desenho Animado</option>
+                            <option value={verify = 1} >Desenho animado</option>
                         </Form.Control>
 
                     </Form.Group>
@@ -117,7 +115,7 @@ export default function CadastroMidias() {
                         <div>
 
                             <Form.Group>
-                                <Form.Label>Quatidade de Temporadas</Form.Label>
+                                <Form.Label>Quatidade de temporadas</Form.Label>
                                 <Form.Control placeholder='Ex: 8'
                                     value={temporadas}
                                     onChange={e => setTemporadas(e.target.value)}
@@ -125,7 +123,7 @@ export default function CadastroMidias() {
                             </Form.Group>
 
                             <Form.Group>
-                                <Form.Label>Quantidade de Episódios</Form.Label>
+                                <Form.Label>Quantidade de episódios</Form.Label>
                                 <Form.Control placeholder='Ex: 40'
                                     value={episodios}
                                     onChange={e => setEpisodios(e.target.value)}
@@ -148,7 +146,7 @@ export default function CadastroMidias() {
 
                     <Form.Group>
 
-                        <Form.Label>Data de Lançamento</Form.Label>
+                        <Form.Label>Data de lançamento</Form.Label>
 
                         <DatePicker className='calendario'
                             selected={selectedDate}
