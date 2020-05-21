@@ -180,7 +180,6 @@ export default function CadastroMidias() {
                             value={descricao}
                             onChange={e => setDescricao(e.target.value)}
                         />
-{console.log(descricao)}
                     </Form.Group>
 
                     <Button className='botao' onClick={() => setbotao(true)}>Cadastrar</Button>
