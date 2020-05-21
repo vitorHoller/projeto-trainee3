@@ -176,7 +176,7 @@ export default function CadastroMidias() {
 
                         <Form.Label>Descrição da mídia</Form.Label>
 
-                        <Form.Control placeholder='Coloque a sua descrição aqui'
+                        <Form.Control placeholder=''
                             value={descricao}
                             onChange={e => setDescricao(e.target.value)}
                         />
