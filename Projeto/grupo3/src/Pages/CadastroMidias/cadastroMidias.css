@@ -71,23 +71,22 @@
 }
 
 .form{
-    width: 380px;
+    width: 360px;
     background: rgb(243, 241, 241);
-    height: 625px;
+    height: 690px;
     border-radius: 20px;
     box-shadow: 4px 4px grey;
     padding: 10px;
+    
 }
 
-
 .cadastromidia{
-    width: 360px;
+    width: 340px;
     background-color: #ddd;
     height: auto;
     border-radius: 20px;
     padding: 5px;
-    border: 2px solid rgba(0, 0, 0, 0.3);
-    margin: auto;
+    border: 2px solid rgba(0, 0, 0, 0.3);    
 }
 
 .calendario{
@@ -118,4 +117,11 @@
 }
 .batbaCA{
     margin-left: 13px;
+}
+.tituloCM{
+    text-align: center;
+    color: rgb(77, 75, 75);
+    margin-left: 25px;
+    font-size: 25pt;
+    text-decoration: underline;
 }
