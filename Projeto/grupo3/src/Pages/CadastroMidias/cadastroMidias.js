@@ -23,6 +23,8 @@ export default function CadastroMidias() {
 
     const [duracao, setDuracao] = useState('')
 
+    const [descricao, setDescricao] = useState('')
+
     const [botao, setbotao] = useState(null)
 
 
@@ -38,7 +40,8 @@ export default function CadastroMidias() {
                     && !!episodios == true
                     && !!selectedDate == true
                     && !!genero == true
-                    && !!botao == true) &&
+                    && !!botao == true
+                    && !!descricao == true) &&
 
                     <Alert variant="success">
 
@@ -168,6 +171,17 @@ export default function CadastroMidias() {
                         />
 
                     </FormGroup>
+
+                    <Form.Group>
+
+                        <Form.Label>Descrição da mídia</Form.Label>
+
+                        <Form.Control placeholder='Coloque a sua descrição aqui'
+                            value={descricao}
+                            onChange={e => setDescricao(e.target.value)}
+                        />
+{console.log(descricao)}
+                    </Form.Group>
 
                     <Button className='botao' onClick={() => setbotao(true)}>Cadastrar</Button>
 
