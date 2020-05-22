@@ -55,14 +55,18 @@ function MyVerticallyCenteredModal(props) {
     );
 }
 
-export default function ListarMidias() {
+export default function ListarMidias(props) {
 
     const [modalShow, setModalShow] = React.useState(false);
+    console.log(props)
 
+    const user = props.location.state.user
+    console.log(user)
+    
     return (
 
         <div className='back overflow-hidden'>
-
+            
             <div className='headerr rounded'>
 
                 <Navbar className='batbaLM rounded mt-2 mr-2' bg="light" expand="lg">

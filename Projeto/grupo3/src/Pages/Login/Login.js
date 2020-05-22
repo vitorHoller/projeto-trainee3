@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Login.css'
 import { Button, Nav, NavDropdown, Navbar, FormControl } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { useHistory } from 'react-router-dom'
+import { useHistory, Link } from 'react-router-dom'
 import { FiLogIn } from "react-icons/fi"
 
 export default function Login() {
@@ -17,7 +17,7 @@ export default function Login() {
     function handleSubmit() {
 
         if (username === usuario && password === senha) {
-            history.push('cadastromidia')
+                history.push({pathname: '/midias', state: {user: usuario}})
         }
         else {
             if (username !== usuario) {
