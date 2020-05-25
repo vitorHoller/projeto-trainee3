@@ -9,7 +9,7 @@ export default function cadastroUsuario() {
 
   return (
 
-    <div className="fundoCM overflow-hidden">
+    <div className="fundoCU overflow-hidden">
 
       <div className='header rounded' >
 
