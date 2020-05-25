@@ -4,6 +4,7 @@ import { Button, Form, FormGroup, Alert, Nav, NavDropdown, Navbar, FormControl }
 import 'bootstrap/dist/css/bootstrap.min.css'
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
+import { useHistory} from 'react-router-dom'
 
 export default function CadastroMidias() {
 
@@ -26,8 +27,13 @@ export default function CadastroMidias() {
     const [descricao, setDescricao] = useState('')
 
     const [botao, setbotao] = useState(null)
+    
+    const history = useHistory();
 
+    function handleSubmit(){
+        history.push('/')
 
+    }
     return (
 
         <div className='fundoCM overflow-hidden'>
@@ -71,9 +77,8 @@ export default function CadastroMidias() {
                     <Navbar.Collapse id="basic-navbar-nav">
 
                         <Nav className="mr-auto">
-                            <Nav.Link href='http://localhost:3000/'>Login</Nav.Link>
-                            <Nav.Link href='http://localhost:3000/cadastrousuario'>Cadastrar usuário</Nav.Link>
                             <Nav.Link href="http://localhost:3000/midias">Mídias cadastradas</Nav.Link>
+                            <Nav.Link onClick={() => handleSubmit()}>Sair</Nav.Link>
                         </Nav>
 
                     </Navbar.Collapse>
