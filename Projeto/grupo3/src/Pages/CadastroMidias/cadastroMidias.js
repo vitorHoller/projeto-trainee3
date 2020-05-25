@@ -64,7 +64,7 @@ export default function CadastroMidias() {
 
             <div className='header rounded' >
 
-                <Navbar className = 'batbaCA rounded mt-2 mr-2' bg="light" expand="lg"> 
+                <Navbar className = 'batbaCA rounded mt-2 mr-4' bg="light" expand="lg"> 
                     <Navbar.Brand>Eu já vi isso !</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
