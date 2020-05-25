@@ -286,7 +286,7 @@ export default function ListarMidias(props) {
                             <tr>
 
                                 <td className='numero pt-3'>5</td>
-                                <td className='pt-3'>Decoding Bill Gates</td>
+                                <td className='pt-3'>Arizona, a pior prisão do mundo</td>
                                 <td className='pt-3'>Documentário</td>
 
                                 <>
