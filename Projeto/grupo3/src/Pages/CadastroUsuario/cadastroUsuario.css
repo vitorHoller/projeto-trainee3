@@ -8,6 +8,7 @@
     -moz-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 657px;
 }
 .headerCU{
     display: flex;
