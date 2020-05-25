@@ -3,8 +3,11 @@ import './listarMidias.css'
 import { Table, Nav, NavDropdown, Navbar, FormControl, Modal, Button } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { FiEdit } from 'react-icons/fi'
+import { useHistory } from 'react-router-dom'
 
 function MyVerticallyCenteredModal(props) {
+    
+
 
     return (
 
@@ -56,6 +59,12 @@ function MyVerticallyCenteredModal(props) {
 }
 
 export default function ListarMidias(props) {
+    
+    const history = useHistory()
+
+    function handleSubmit(){
+        history.push('/')
+    }
 
     const [modalShow, setModalShow] = React.useState(false);
     console.log(props)
@@ -71,16 +80,15 @@ export default function ListarMidias(props) {
 
                 <Navbar className='batbaLM rounded mt-2 mr-2' bg="light" expand="lg">
 
-                    <Navbar.Brand>Eu já vi isso!!</Navbar.Brand>
+                    <Navbar.Brand>Eu já vi isso !</Navbar.Brand>
 
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
                     <Navbar.Collapse id="basic-navbar-nav">
 
                         <Nav className="mr-auto">
-                            <Nav.Link href='http://localhost:3000/'>Login</Nav.Link>
-                            <Nav.Link href='http://localhost:3000/cadastrousuario'>Cadastrar Usuário</Nav.Link>
                             <Nav.Link href="http://localhost:3000/cadastromidia">Cadastrar Mídias</Nav.Link>
+                            <Nav.Link onClick={() => handleSubmit()}>Sair</Nav.Link>
                         </Nav>
 
                     </Navbar.Collapse>
