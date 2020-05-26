@@ -7,27 +7,56 @@
     -moz-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 
 .headerr {
     display: flex;
     text-align: center;
-    margin-left: 820px;
+    width: 525px;
+    margin-left: 835px;
 }
-
-.titulo{
-    height: auto;
-    width: fit-content;
-    background-color: #ddd;
+.tabelaLM{
+    background-color: rgb(243, 241, 241) ;
+    height: 435px;
+    flex-direction: column;
+    width: 780px;
+    margin-top: 50px;
+    margin-left: 290px;
+    border-radius: 10px;
     box-shadow: 4px 4px grey;
 }
-.table{
+.tabelaLM2{
+    background-color: #ddd;
+    height: 420px;
+    flex-direction: column;
+    width: 765px;
+    margin-top: 9px;
+    margin-left: 8px;
     border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+.table{
+    border-collapse: unset !important;
+}
+.table td, .table th {
+    border-top: none !important;
+}
+*, ::after, ::before{
+    border-radius: 3px;
+}
+.titulo{
+    text-align: center;
+    margin-top: 0px;
+    text-decoration: underline;
+    color: rgb(77, 75, 75);
 }
 
 .tabelaheight{
     height: 415px;
     width: 750px;
+    margin-top: 0.5rem;
+
 }
 .titulotabela{
     background-color: rgb(151, 151, 151);
@@ -39,6 +68,7 @@
 
 .rodapeLM {
     margin-bottom: 15px;
+    margin-top: 35px;
     text-align: center;
     font-size: 13pt;
     border-top: 1px solid black;
