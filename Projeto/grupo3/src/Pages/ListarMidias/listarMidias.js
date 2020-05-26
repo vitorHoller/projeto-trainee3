@@ -129,7 +129,6 @@ export default function ListarMidias(props) {
     return (
 
         <div className='back overflow-hidden'>
-                <div className='headerr rounded'>
 
             <div className='headerr rounded flex'>
 
@@ -145,26 +144,21 @@ export default function ListarMidias(props) {
 
                         <Navbar.Collapse id="basic-navbar-nav">
 
-                            <Nav className="mr-auto">
-                                <Nav.Link href="http://localhost:3000/cadastromidia">Cadastrar mídias</Nav.Link>
-                                <Nav.Link onClick={() => handleSubmit()}>Sair</Nav.Link>
-                            </Nav>
-
                         <Nav className="mr-auto">
                             <Nav.Link onClick={() => handleObject()} >Cadastrar Mídias</Nav.Link>
                             <Nav.Link onClick={() => handleSubmit()}>Sair</Nav.Link>
                         </Nav>
 
-                    </Navbar>
+                    
+                    </Navbar.Collapse>
+                </Navbar>
 
                 </div>
+
                 <div className='tabelaLM'>
+                    
                     <div className='tabelaLM2'>
-
-
-
-            </div>
-
+                        <h1 className = 'titulo'>Mídias cadastradas</h1>
                         <div className='tabelaheight mr-auto ml-auto'>
 
                             <Table variant='dark'>
@@ -191,7 +185,7 @@ export default function ListarMidias(props) {
                                         <td className='pt-3'>La Casa de Papel</td>
                                         <td className='pt-3'>Série</td>
 
-                                        <>
+                                        
 
                                             <Button
                                                 variant="outline-light mt-3"
@@ -202,30 +196,20 @@ export default function ListarMidias(props) {
                                                 }
                                                 }>
                                                 Clique Aqui
-                                        </Button>
+                                             </Button>
 
+                                             <MyVerticallyCenteredModal
+                                             show={modalShow}
+                                             onHide={() => setModalShow(false)}
+                                             />
+                                           </tr>
 
-                                <Button
-                                    variant="outline-light mt-3"
-                                    className='text-white bg-dark w-75'
-                                    onClick={() => {
-                                        SetarLaCasadePapel()
-                                        setModalShow(true)
-                                    }
-                                    }>
-                                    Clique Aqui
-                                    </Button>
-
-                                <MyVerticallyCenteredModal
-                                    show={modalShow}
-                                    onHide={() => setModalShow(false)}
-                                />
-
-
-
-                            </tr>
-
+                                            <tr>
+                                                <td className='numero pt-3'>2</td>
+                                                <td className='pt-3'>The Walking Dead</td>
+                                                <td className='pt-3'>Série</td>
                                         <>
+
 
                                             <Button
                                                 variant="outline-light mt-3"
@@ -309,7 +293,7 @@ export default function ListarMidias(props) {
                                         <td className='pt-3'>Arizona, a pior prisão do mundo</td>
                                         <td className='pt-3'>Documentário</td>
 
-                                        <>
+    
 
                                             <Button
                                                 variant="outline-light mt-3"
@@ -322,32 +306,28 @@ export default function ListarMidias(props) {
                                                 Clique Aqui
                                         </Button>
 
+                                         <MyVerticallyCenteredModal
+                                          show={modalShow}
+                                          onHide={() => setModalShow(false)}
+                                         />
 
+                                    </tr>
 
-                                <Button
-                                    variant="outline-light mt-3"
-                                    className='text-white bg-dark w-75'
-                                    onClick={() => {
-                                        SetarDocumentario()
-                                        setModalShow(true)
-                                    }
-                                    }>
-                                    Clique Aqui
-                                 </Button>
-
-                                <MyVerticallyCenteredModal
-                                    show={modalShow}
-                                    onHide={() => setModalShow(false)}
-                                />
-
+                                </tbody>
 
                             </Table>
+
                         </div>
+
                     </div>
 
                 </div>
 
+
                 <div className='rodapeLM'> Desenvolvido por Grupo3 </div>
-            </div>
+        
+        
+        </div>
+        
     )
 }

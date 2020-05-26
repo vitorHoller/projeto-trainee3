@@ -28,6 +28,9 @@
     height: auto;
     width: fit-content;
     background-color: #ddd;
+    margin: auto;
+}
+
 .tabelaLM{
     background-color: rgb(243, 241, 241) ;
     height: 435px;

@@ -13,7 +13,7 @@
 .headerCU{
     display: flex;
     text-align: center;
-    margin-left: 840px;
+    margin-left: 80px;
 }
 .boxCU{
     height: 500px;
@@ -121,5 +121,5 @@
     width: 1350px;
 }
 .batba{
-    margin-left: 300px;
+    margin-left: 270px;
 }
