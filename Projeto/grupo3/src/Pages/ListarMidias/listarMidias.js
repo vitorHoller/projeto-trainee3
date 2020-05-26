@@ -138,7 +138,7 @@ export default function ListarMidias(props) {
                     <p>{user}</p>
                 </div>
 
-                <Navbar className='batbaLM rounded mt-2 mr-5' bg="light" expand="lg">
+                <Navbar className='batbaLM rounded mt-2' bg="light" expand="lg">
 
                     <Navbar.Brand>Eu já vi isso !</Navbar.Brand>
 
