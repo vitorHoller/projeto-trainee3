@@ -3,7 +3,8 @@ import './listarMidias.css'
 import { Table, Nav, NavDropdown, Navbar, FormControl, Modal, Button } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { FiEdit } from 'react-icons/fi'
-import { useHistory } from 'react-router-dom'
+import { useHistory, Link } from 'react-router-dom'
+import { FiUser } from 'react-icons/fi'
 
 
 export default function ListarMidias(props) {
@@ -31,41 +32,41 @@ export default function ListarMidias(props) {
                 aria-labelledby="contained-modal-title-vcenter"
                 centered
             >
-    
+
                 <Modal.Header closeButton>
-    
+
                     <Modal.Title id="contained-modal-title-vcenter">
                         {NomedaMidia}
                     </Modal.Title>
-    
+
                 </Modal.Header>
-    
+
                 <Modal.Body className='topicosdaMidia'>
-    
+
                     <strong>Quantidade de Episódios</strong>
                     <p>{QntdeEpisodios}</p>
-    
+
                     <strong>Gênero</strong>
                     <p>{Genero}</p>
-    
+
                     <strong>Data de Lançamento</strong>
                     <p>{DatadeLancamento}</p>
-    
+
                     <strong>Tempo de Duração</strong>
                     <p>{TempodeDuracao}</p>
-    
+
                     <strong>Descrição</strong>
                     <p>{Descricao}</p>
-    
+
                 </Modal.Body>
-    
+
                 <Modal.Footer>
 
                     <Button className='editarInfo mr-5'>Editar</Button>
                     <Button className='fecharInfo mr-5 ml-5' onClick={props.onHide}>Fechar</Button>
-    
+
                 </Modal.Footer>
-    
+
             </Modal>
         );
     }
@@ -117,18 +118,27 @@ export default function ListarMidias(props) {
     }
 
     const [modalShow, setModalShow] = React.useState(false);
-    console.log(props)
+
 
     const user = props.location.state.user
-    console.log(user)
+
+    function handleObject() {
+        history.push({ pathname: '/cadastromidia', state: { user: user } })
+    }
 
     return (
 
         <div className='back overflow-hidden'>
 
-            <div className='headerr rounded'>
+            <div className='headerr rounded flex'>
 
-                <Navbar className='batbaLM rounded mt-2 mr-2' bg="light" expand="lg">
+                <div className='userrr mt-2 flex flex-column'>
+                    <FiUser size={60} className='' />
+                    <p className = 'mb-0'>Logado</p>
+                    <p>{user}</p>
+                </div>
+
+                <Navbar className='batbaLM rounded mt-2 mr-5' bg="light" expand="lg">
 
                     <Navbar.Brand>Eu já vi isso !</Navbar.Brand>
 
@@ -137,13 +147,15 @@ export default function ListarMidias(props) {
                     <Navbar.Collapse id="basic-navbar-nav">
 
                         <Nav className="mr-auto">
-                            <Nav.Link href="http://localhost:3000/cadastromidia">Cadastrar Mídias</Nav.Link>
+                            <Nav.Link onClick={() => handleObject()} >Cadastrar Mídias</Nav.Link>
                             <Nav.Link onClick={() => handleSubmit()}>Sair</Nav.Link>
                         </Nav>
 
                     </Navbar.Collapse>
 
                 </Navbar>
+
+
 
             </div>
 
@@ -177,25 +189,24 @@ export default function ListarMidias(props) {
                                 <td className='pt-3'>La Casa de Papel</td>
                                 <td className='pt-3'>Série</td>
 
-                                <>
 
-                                    <Button
-                                        variant="outline-light mt-3"
-                                        className='text-white bg-dark w-75'
-                                        onClick={() => {
-                                            SetarLaCasadePapel()
-                                            setModalShow(true)
-                                        }
-                                        }>
-                                        Clique Aqui
-                                 </Button>
+                                <Button
+                                    variant="outline-light mt-3"
+                                    className='text-white bg-dark w-75'
+                                    onClick={() => {
+                                        SetarLaCasadePapel()
+                                        setModalShow(true)
+                                    }
+                                    }>
+                                    Clique Aqui
+                                    </Button>
 
-                                    <MyVerticallyCenteredModal
-                                        show={modalShow}
-                                        onHide={() => setModalShow(false)}
-                                    />
+                                <MyVerticallyCenteredModal
+                                    show={modalShow}
+                                    onHide={() => setModalShow(false)}
+                                />
 
-                                </>
+
 
                             </tr>
 
@@ -289,25 +300,24 @@ export default function ListarMidias(props) {
                                 <td className='pt-3'>Arizona, a pior prisão do mundo</td>
                                 <td className='pt-3'>Documentário</td>
 
-                                <>
 
-                                    <Button
-                                        variant="outline-light mt-3"
-                                        className='text-white bg-dark w-75'
-                                        onClick={() => {
-                                            SetarDocumentario()
-                                            setModalShow(true)
-                                        }
-                                        }>
-                                        Clique Aqui
+
+                                <Button
+                                    variant="outline-light mt-3"
+                                    className='text-white bg-dark w-75'
+                                    onClick={() => {
+                                        SetarDocumentario()
+                                        setModalShow(true)
+                                    }
+                                    }>
+                                    Clique Aqui
                                  </Button>
 
-                                    <MyVerticallyCenteredModal
-                                        show={modalShow}
-                                        onHide={() => setModalShow(false)}
-                                    />
+                                <MyVerticallyCenteredModal
+                                    show={modalShow}
+                                    onHide={() => setModalShow(false)}
+                                />
 
-                                </>
 
                             </tr>
 

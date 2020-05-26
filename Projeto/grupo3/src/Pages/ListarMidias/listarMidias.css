@@ -12,7 +12,15 @@
 .headerr {
     display: flex;
     text-align: center;
-    margin-left: 820px;
+    margin-left: 15px;
+}
+
+.userrr{
+    margin-right: 600px;
+    width: 120px;
+    height: 110px;
+    border-radius: 20px;
+    background-color: rgb(243, 241, 241);
 }
 
 .titulo{
@@ -56,4 +64,5 @@
 }
 .batbaLM {
     margin-left: 177px;
+    height: 60px;
 }

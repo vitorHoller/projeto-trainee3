@@ -4,9 +4,10 @@ import { Button, Form, FormGroup, Alert, Nav, NavDropdown, Navbar, FormControl }
 import 'bootstrap/dist/css/bootstrap.min.css'
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
-import { useHistory} from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
+import { FiUser } from 'react-icons/fi'
 
-export default function CadastroMidias() {
+export default function CadastroMidias(props) {
 
     const [selectedDate, setSelectedDate] = useState(null)
 
@@ -27,13 +28,17 @@ export default function CadastroMidias() {
     const [descricao, setDescricao] = useState('')
 
     const [botao, setbotao] = useState(null)
-    
+
     const history = useHistory();
 
-    function handleSubmit(){
+    function handleSubmit() {
         history.push('/')
 
     }
+
+    const user = props.location.state.user
+    console.log(user)
+
     return (
 
         <div className='fundoCM overflow-hidden'>
@@ -54,7 +59,7 @@ export default function CadastroMidias() {
                         <Alert.Heading>Mídia adicionada com sucesso!!!</Alert.Heading>
                           Você pode verificar a mídia instalada na página de listar as mídias, clique no link abaixo
                           para ser redirecionado
-                          
+
                           <p>
 
                             <Alert.Link href='http://localhost:3000/midias'>
@@ -68,9 +73,16 @@ export default function CadastroMidias() {
 
             </div>
 
-            <div className='header rounded' >
+            <div className='headerrasassar flex rounded' >
+                <div className='userrrrrr mt-2 flex flex-column'>
+                    <FiUser size={60}/>
+                    <p className='logado mb-0'>Logado</p>
+                    <p className = 'usersar'>{user}</p>
+                </div>
 
-                <Navbar className = 'batbaCA rounded mt-2 mr-4' bg="light" expand="lg"> 
+
+                
+                <Navbar className='batbaCA rounded mt-2 mr-5' bg="light" expand="lg">
                     <Navbar.Brand>Eu já vi isso !</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
@@ -201,5 +213,5 @@ export default function CadastroMidias() {
     );
 }
 
- 
+
 

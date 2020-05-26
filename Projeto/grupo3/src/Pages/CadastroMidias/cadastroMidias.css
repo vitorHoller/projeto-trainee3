@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     background-image: url(./fundo_borrado.png);
-    height: 910px;
+    height: 1000px;
     -webkit-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
@@ -17,13 +17,19 @@
     align-self: center;
 }
 
-.header{
+.headerrasassar{
     display: flex;
     text-align: center;
-    margin-left: 840px;
-    width: 550px;   
+    margin-left: 5px;
 }
 
+.userrrrrr{
+    width: 120px;
+    margin-right: 600px;
+    border-radius: 20px;
+    background-color: rgb(243, 241, 241);
+    height: 110px;
+}
 .cadastro{
     margin: 10px;
     width: 150px;
@@ -116,7 +122,8 @@
     padding-bottom: 0px;
 }
 .batbaCA{
-    margin-left: 160px;
+    height: 60px;
+    margin-left: 188px;
 }
 .tituloCM{
     text-align: center;
