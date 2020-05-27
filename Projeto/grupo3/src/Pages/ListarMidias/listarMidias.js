@@ -9,9 +9,13 @@ import { FiUser } from 'react-icons/fi'
 
 export default function ListarMidias(props) {
 
+    const [Verify, setVerify] = useState()
+
     const history = useHistory()
 
     const [NomedaMidia, setNomedaMidia] = useState('')
+
+    const [QntdeTemporadas, setQntdeTemporadas] = useState('')
 
     const [QntdeEpisodios, setQntdeEpisodios] = useState('')
 
@@ -40,26 +44,54 @@ export default function ListarMidias(props) {
                     </Modal.Title>
 
                 </Modal.Header>
-
                 <Modal.Body className='topicosdaMidia'>
 
-                    <strong>Quantidade de Episódios</strong>
-                    <p>{QntdeEpisodios}</p>
+                    {Verify === 1 &&
 
-                    <strong>Gênero</strong>
-                    <p>{Genero}</p>
+                        <>
 
-                    <strong>Data de Lançamento</strong>
-                    <p>{DatadeLancamento}</p>
+                            <strong>Quantidade de Temporadas</strong>
+                            <p>{QntdeTemporadas}</p>
 
-                    <strong>Tempo de Duração</strong>
-                    <p>{TempodeDuracao}</p>
+                            <strong>Quantidade de Episódios</strong>
+                            <p>{QntdeEpisodios}</p>
 
-                    <strong>Descrição</strong>
-                    <p>{Descricao}</p>
+                            <strong>Gênero</strong>
+                            <p>{Genero}</p>
 
-                </Modal.Body>
+                            <strong>Data de Lançamento</strong>
+                            <p>{DatadeLancamento}</p>
 
+                            <strong>Tempo de Duração</strong>
+                            <p>{TempodeDuracao}</p>
+
+                            <strong>Descrição</strong>
+                            <p>{Descricao}</p>
+
+                        </>
+
+                    }
+
+                    {Verify === 0 &&
+
+                        <>
+
+                            <strong>Gênero</strong>
+                            <p>{Genero}</p>
+
+                            <strong>Data de Lançamento</strong>
+                            <p>{DatadeLancamento}</p>
+
+                            <strong>Tempo de Duração</strong>
+                            <p>{TempodeDuracao}</p>
+
+                            <strong>Descrição</strong>
+                            <p>{Descricao}</p>
+
+                        </>
+
+                    }
+                </ Modal.Body>
                 <Modal.Footer>
 
                     <Button className='editarInfo mr-5'>Editar</Button>
@@ -71,8 +103,18 @@ export default function ListarMidias(props) {
         );
     }
 
+    function Verificador(tipo) {
+        if (tipo === "serie" || tipo === "anime" || tipo === "desenho animado") {
+            setVerify(1)
+        }
+        else if (tipo === "documentario" || tipo === "filme") {
+            setVerify(0)
+        }
+    }
+
     function SetarLaCasadePapel() {
         setNomedaMidia("La Casa de Papel")
+        setQntdeTemporadas("4")
         setQntdeEpisodios("38")
         setGenero("Suspense")
         setDatadeLancamento("01/01/01")
@@ -82,6 +124,7 @@ export default function ListarMidias(props) {
 
     function SetarTheWalkingDead() {
         setNomedaMidia("The Walking Dead")
+        setQntdeTemporadas("10")
         setQntdeEpisodios("115")
         setGenero("Sobrevivência/Zombies")
         setDatadeLancamento("02/02/02")
@@ -134,7 +177,7 @@ export default function ListarMidias(props) {
 
                 <div className='userrr mt-2 flex flex-column'>
                     <FiUser size={60} className='' />
-                    <p className = 'mb-0'>Logado</p>
+                    <p className='mb-0'>Logado</p>
                     <p>{user}</p>
                 </div>
 
@@ -142,192 +185,197 @@ export default function ListarMidias(props) {
 
                     <Navbar.Brand>Eu já vi isso !</Navbar.Brand>
 
-                        <Navbar.Collapse id="basic-navbar-nav">
+                    <Navbar.Collapse id="basic-navbar-nav">
 
                         <Nav className="mr-auto">
                             <Nav.Link onClick={() => handleObject()} >Cadastrar Mídias</Nav.Link>
                             <Nav.Link onClick={() => handleSubmit()}>Sair</Nav.Link>
                         </Nav>
 
-                    
+
                     </Navbar.Collapse>
                 </Navbar>
 
-                </div>
+            </div>
 
-                <div className='tabelaLM'>
-                    
-                    <div className='tabelaLM2'>
-                        <h1 className = 'titulo'>Mídias cadastradas</h1>
-                        <div className='tabelaheight mr-auto ml-auto'>
+            <div className='tabelaLM'>
 
-                            <Table variant='dark'>
+                <div className='tabelaLM2'>
+                    <h1 className='titulo'>Mídias cadastradas</h1>
+                    <div className='tabelaheight mr-auto ml-auto'>
 
-                                <thead className='titulotabela text-center' >
+                        <Table variant='dark'>
 
-                                    <tr className='text-body'>
+                            <thead className='titulotabela text-center' >
 
-                                        <th>#</th>
-                                        <th>Nome da Midia</th>
-                                        <th>Tipo de Mídia</th>
-                                        <th>Detalhes da Mídia</th>
+                                <tr className='text-body'>
 
-                                    </tr>
+                                    <th>#</th>
+                                    <th>Nome da Midia</th>
+                                    <th>Tipo de Mídia</th>
+                                    <th>Detalhes da Mídia</th>
 
-                                </thead>
+                                </tr>
+
+                            </thead>
 
 
-                                <tbody className='bodytabela text-center text-dark'>
+                            <tbody className='bodytabela text-center text-dark'>
 
-                                    <tr>
+                                <tr>
 
-                                        <td className='numero pt-3'>1</td>
-                                        <td className='pt-3'>La Casa de Papel</td>
-                                        <td className='pt-3'>Série</td>
+                                    <td className='numero pt-3'>1</td>
+                                    <td className='pt-3'>La Casa de Papel</td>
+                                    <td className='pt-3'>Série</td>
 
-                                        
 
-                                            <Button
-                                                variant="outline-light mt-3"
-                                                className='text-white bg-dark w-75'
-                                                onClick={() => {
-                                                    SetarLaCasadePapel()
-                                                    setModalShow(true)
-                                                }
-                                                }>
-                                                Clique Aqui
+
+                                    <Button
+                                        variant="outline-light mt-3"
+                                        className='text-white bg-dark w-75'
+                                        onClick={() => {
+                                            SetarLaCasadePapel()
+                                            Verificador("serie")
+                                            setModalShow(true)
+                                        }
+                                        }>
+                                        Clique Aqui
                                              </Button>
 
-                                             <MyVerticallyCenteredModal
-                                             show={modalShow}
-                                             onHide={() => setModalShow(false)}
-                                             />
-                                           </tr>
+                                    <MyVerticallyCenteredModal
+                                        show={modalShow}
+                                        onHide={() => setModalShow(false)}
+                                    />
+                                </tr>
 
-                                            <tr>
-                                                <td className='numero pt-3'>2</td>
-                                                <td className='pt-3'>The Walking Dead</td>
-                                                <td className='pt-3'>Série</td>
-                                        <>
+                                <tr>
+                                    <td className='numero pt-3'>2</td>
+                                    <td className='pt-3'>The Walking Dead</td>
+                                    <td className='pt-3'>Série</td>
+                                    <>
 
 
-                                            <Button
-                                                variant="outline-light mt-3"
-                                                className='text-white bg-dark w-75'
-                                                onClick={() => {
-                                                    SetarTheWalkingDead()
-                                                    setModalShow(true)
-                                                }
-                                                }>
-                                                Clique Aqui
+                                        <Button
+                                            variant="outline-light mt-3"
+                                            className='text-white bg-dark w-75'
+                                            onClick={() => {
+                                                SetarTheWalkingDead()
+                                                Verificador("serie")
+                                                setModalShow(true)
+                                            }
+                                            }>
+                                            Clique Aqui
                                         </Button>
 
-                                            <MyVerticallyCenteredModal
-                                                show={modalShow}
-                                                onHide={() => setModalShow(false)}
-                                            />
+                                        <MyVerticallyCenteredModal
+                                            show={modalShow}
+                                            onHide={() => setModalShow(false)}
+                                        />
 
-                                        </>
+                                    </>
 
-                                    </tr>
+                                </tr>
 
-                                    <tr>
+                                <tr>
 
-                                        <td className='numero pt-3'>3</td>
-                                        <td className='pt-3'>Titanic</td>
-                                        <td className='pt-3'>Filme</td>
+                                    <td className='numero pt-3'>3</td>
+                                    <td className='pt-3'>Titanic</td>
+                                    <td className='pt-3'>Filme</td>
 
-                                        <>
+                                    <>
 
-                                            <Button
-                                                variant="outline-light mt-3"
-                                                className='text-white bg-dark w-75'
-                                                onClick={() => {
-                                                    SetarTitanic()
-                                                    setModalShow(true)
-                                                }
-                                                }>
-                                                Clique Aqui
+                                        <Button
+                                            variant="outline-light mt-3"
+                                            className='text-white bg-dark w-75'
+                                            onClick={() => {
+                                                SetarTitanic()
+                                                Verificador("filme")
+                                                setModalShow(true)
+                                            }
+                                            }>
+                                            Clique Aqui
                                         </Button>
 
-                                            <MyVerticallyCenteredModal
-                                                show={modalShow}
-                                                onHide={() => setModalShow(false)}
-                                            />
+                                        <MyVerticallyCenteredModal
+                                            show={modalShow}
+                                            onHide={() => setModalShow(false)}
+                                        />
 
-                                        </>
+                                    </>
 
-                                    </tr>
+                                </tr>
 
-                                    <tr>
+                                <tr>
 
-                                        <td className='numero pt-3'>4</td>
-                                        <td className='pt-3'>Resgate</td>
-                                        <td className='pt-3'>Filme</td>
+                                    <td className='numero pt-3'>4</td>
+                                    <td className='pt-3'>Resgate</td>
+                                    <td className='pt-3'>Filme</td>
 
-                                        <>
+                                    <>
 
-                                            <Button
-                                                variant="outline-light mt-3"
-                                                className='text-white bg-dark w-75'
-                                                onClick={() => {
-                                                    SetarResgate()
-                                                    setModalShow(true)
-                                                }
-                                                }>
-                                                Clique Aqui
+                                        <Button
+                                            variant="outline-light mt-3"
+                                            className='text-white bg-dark w-75'
+                                            onClick={() => {
+                                                SetarResgate()
+                                                Verificador("filme")
+                                                setModalShow(true)
+                                            }
+                                            }>
+                                            Clique Aqui
                                         </Button>
 
-                                            <MyVerticallyCenteredModal
-                                                show={modalShow}
-                                                onHide={() => setModalShow(false)}
-                                            />
+                                        <MyVerticallyCenteredModal
+                                            show={modalShow}
+                                            onHide={() => setModalShow(false)}
+                                        />
 
-                                        </>
+                                    </>
 
-                                    </tr>
+                                </tr>
 
-                                    <tr>
+                                <tr>
 
-                                        <td className='numero pt-3'>5</td>
-                                        <td className='pt-3'>Arizona, a pior prisão do mundo</td>
-                                        <td className='pt-3'>Documentário</td>
+                                    <td className='numero pt-3'>5</td>
+                                    <td className='pt-3'>Arizona, a pior prisão do mundo</td>
+                                    <td className='pt-3'>Documentário</td>
 
-    
 
-                                            <Button
-                                                variant="outline-light mt-3"
-                                                className='text-white bg-dark w-75'
-                                                onClick={() => {
-                                                    SetarDocumentario()
-                                                    setModalShow(true)
-                                                }
-                                                }>
-                                                Clique Aqui
+
+                                    <Button
+                                        variant="outline-light mt-3"
+                                        className='text-white bg-dark w-75'
+                                        onClick={() => {
+                                            SetarDocumentario()
+                                            Verificador("documentario")
+                                            setModalShow(true)
+                                        }
+                                        }>
+                                        Clique Aqui
                                         </Button>
 
-                                         <MyVerticallyCenteredModal
-                                          show={modalShow}
-                                          onHide={() => setModalShow(false)}
-                                         />
+                                    <MyVerticallyCenteredModal
+                                        show={modalShow}
+                                        onHide={() => setModalShow(false)}
+                                    />
 
-                                    </tr>
+                                </tr>
 
-                                </tbody>
+                            </tbody>
 
-                            </Table>
-
-                        </div>
+                        </Table>
 
                     </div>
 
                 </div>
 
+            </div>
 
-                <div className='rodapeLM'> Desenvolvido por Grupo3 </div>
-        
-        
+
+            <div className='rodapeLM'> Desenvolvido por Grupo3 </div>
+
+
         </div>
-        
+
     )
 }
