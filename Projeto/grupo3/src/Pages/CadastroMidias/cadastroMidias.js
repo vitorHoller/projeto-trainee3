@@ -36,6 +36,10 @@ export default function CadastroMidias(props) {
 
     }
 
+    function handleObject() {
+        history.push({ pathname: '/midias', state: { user: user } })
+    }
+
     const user = props.location.state.user
     console.log(user)
 
@@ -89,7 +93,7 @@ export default function CadastroMidias(props) {
                     <Navbar.Collapse id="basic-navbar-nav">
 
                         <Nav className="mr-auto">
-                            <Nav.Link href="http://localhost:3000/midias">Mídias cadastradas</Nav.Link>
+                            <Nav.Link onClick = {() => handleObject()}>Mídias cadastradas</Nav.Link>
                             <Nav.Link onClick={() => handleSubmit()}>Sair</Nav.Link>
                         </Nav>
 
