@@ -36,7 +36,7 @@ export default function Login() {
 
                 <div className='box'>
 
-                    <h1 className='title'>Eu já vi isso !</h1>
+                    <h1 className='title'>Eu já vi isso!</h1>
 
                     <div className='login'>
 

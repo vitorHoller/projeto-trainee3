@@ -15,7 +15,7 @@ export default function cadastroUsuario() {
 
         <Navbar className='batba rounded mt-2 mr-2' bg="light" expand="lg">
 
-          <Navbar.Brand>Eu já vi isso !</Navbar.Brand>
+          <Navbar.Brand>Eu já vi isso!</Navbar.Brand>
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
 

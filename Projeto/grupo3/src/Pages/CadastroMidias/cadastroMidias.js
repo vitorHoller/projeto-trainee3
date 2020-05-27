@@ -87,7 +87,7 @@ export default function CadastroMidias(props) {
 
                 
                 <Navbar className='batbaCA rounded mt-2' bg="light" expand="lg">
-                    <Navbar.Brand>Eu já vi isso !</Navbar.Brand>
+                    <Navbar.Brand>Eu já vi isso!</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -103,7 +103,7 @@ export default function CadastroMidias(props) {
 
             </div>
 
-            <div className='form mt-4'>
+            <div className='form mt-1'>
 
                 <Form className='cadastromidia'>
                     <label className='tituloCM'>Cadastre sua mídia</label>
@@ -203,7 +203,7 @@ export default function CadastroMidias(props) {
                         />
                     </Form.Group>
 
-                    <Button className='botao' onClick={() => setbotao(true)}>Cadastrar</Button>
+                    <Button className='botao' onClick={() => setbotao(true)} type='submit'>Cadastrar</Button>
 
                 </Form>
 
