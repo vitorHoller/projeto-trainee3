@@ -16,7 +16,7 @@
     margin-left: 80px;
 }
 .boxCU{
-    height: 500px;
+    height: 478px;
     background-color: #ddd;
     border-radius: 10px;
     border: 2px solid rgba(0, 0, 0, 0.3);
@@ -45,7 +45,7 @@
     padding-left: 0px; 
 }
 .titleCU{
-    margin-top: 10px;
+    margin-top: 2px;
     text-align: center;
     color: rgb(77, 75, 75);
     text-decoration: underline;
@@ -121,5 +121,5 @@
     width: 1350px;
 }
 .batba{
-    margin-left: 270px;
+    margin-left: 260px;
 }

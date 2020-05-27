@@ -13,7 +13,7 @@
 .headerr {
     display: flex;
     text-align: center;
-    margin-left: 15px;
+    margin-left: 22px;
 }
 
 .userrr{
@@ -36,7 +36,7 @@
     height: 435px;
     flex-direction: column;
     width: 780px;
-    margin-top: 50px;
+    margin-top: 15px;
     margin-left: 290px;
     border-radius: 10px;
     box-shadow: 4px 4px grey;
@@ -83,7 +83,7 @@
 
 .rodapeLM {
     margin-bottom: 15px;
-    margin-top: 35px;
+    margin-top: 30px;
     text-align: center;
     font-size: 13pt;
     border-top: 1px solid black;

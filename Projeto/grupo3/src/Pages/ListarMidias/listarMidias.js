@@ -183,7 +183,7 @@ export default function ListarMidias(props) {
 
                 <Navbar className='batbaLM rounded mt-2' bg="light" expand="lg">
 
-                    <Navbar.Brand>Eu já vi isso !</Navbar.Brand>
+                    <Navbar.Brand>Eu já vi isso!</Navbar.Brand>
 
                     <Navbar.Collapse id="basic-navbar-nav">
 
