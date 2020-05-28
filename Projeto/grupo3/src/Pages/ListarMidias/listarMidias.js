@@ -188,7 +188,7 @@ export default function ListarMidias(props) {
                     <Navbar.Collapse id="basic-navbar-nav">
 
                         <Nav className="mr-auto">
-                            <Nav.Link onClick={() => handleObject()} >Cadastrar Mídias</Nav.Link>
+                            <Nav.Link onClick={() => handleObject()} >Cadastrar mídias</Nav.Link>
                             <Nav.Link onClick={() => handleSubmit()}>Sair</Nav.Link>
                         </Nav>
 
