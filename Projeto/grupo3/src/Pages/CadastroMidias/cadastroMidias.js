@@ -50,29 +50,29 @@ export default function CadastroMidias(props) {
             <div className='popup mt-5 mr-5'>
 
                 {(!!nomeMidia == true
-                    && !!temporadas == true || !!verificador == 1
+                    && !!temporadas == true 
                     && !!duracao == true
-                    && !!episodios == true || !!verificador == 1
+                    && !!episodios == true 
                     && !!selectedDate == true
                     && !!genero == true
                     && !!botao == true
                     && !!descricao == true) &&
 
-                    <Alert variant="success">
+                        <Alert variant="success">
 
-                        <Alert.Heading>Mídia adicionada com sucesso!!!</Alert.Heading>
-                          Você pode verificar a mídia instalada na página de listar as mídias, clique no link abaixo
-                          para ser redirecionado
+                            <Alert.Heading>Mídia adicionada com sucesso!!!</Alert.Heading>
+                            Você pode verificar a mídia instalada na página de mídias cadastradas, clique no link abaixo
+                            para ser redirecionado
 
-                          <p>
+                            <p>
 
-                            <Alert.Link onClick = {() => handleObject()}>
-                                Clique Aqui
-                            </Alert.Link>
+                                <Alert.Link onClick = {() => handleObject()}>
+                                    Clique Aqui
+                                </Alert.Link>
 
-                        </p>
+                            </p>
 
-                    </Alert>
+                        </Alert>
                 }
 
             </div>
