@@ -50,9 +50,9 @@ export default function CadastroMidias(props) {
             <div className='popup mt-5 mr-5'>
 
                 {(!!nomeMidia == true
-                    && !!temporadas == true
+                    && !!temporadas == true || !!verificador == 1
                     && !!duracao == true
-                    && !!episodios == true
+                    && !!episodios == true || !!verificador == 1
                     && !!selectedDate == true
                     && !!genero == true
                     && !!botao == true
@@ -66,7 +66,7 @@ export default function CadastroMidias(props) {
 
                           <p>
 
-                            <Alert.Link href='http://localhost:3000/midias'>
+                            <Alert.Link onClick = {() => handleObject()}>
                                 Clique Aqui
                             </Alert.Link>
 
