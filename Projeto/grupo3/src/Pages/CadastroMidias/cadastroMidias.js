@@ -203,7 +203,7 @@ export default function CadastroMidias(props) {
                         />
                     </Form.Group>
 
-                    <Button className='botao' onClick={() => setbotao(true)} type='submit'>Cadastrar</Button>
+                    <Button className='botao' onClick={() => setbotao(true)} >Cadastrar</Button>
 
                 </Form>
 

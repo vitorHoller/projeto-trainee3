@@ -78,7 +78,7 @@
 .form{
     width: 360px;
     background: rgb(243, 241, 241);
-    height: 773px;
+    height: auto;
     border-radius: 20px;
     box-shadow: 4px 4px grey;
     padding: 10px;
